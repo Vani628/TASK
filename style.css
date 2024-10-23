@@ -11,24 +11,17 @@
   font-family: Helvetica, Arial, Geneva, sans-serif;
   background-color: #01e2c2;
   color: #000;
-  padding: 10px 20px;
   font-weight: bold;
   border: none;
   border-radius: 0;
   position: relative;
-}
-@media (max-width: 768px) {
-  .navbar .order-btn {
-    padding: 6px 12px; /* Smaller button for mobile */
-    font-size: 0.9rem;
-  }
 }
 
 .carousel .carousel-item .image {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   width: 100%;
-  height: auto;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   transition: -webkit-clip-path 0.5s ease;
@@ -183,9 +176,10 @@ body {
 }
 .imgg img {
   width: 100%;
-  height: auto;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 .imgg .text {
   position: absolute;
@@ -193,15 +187,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
-.imgg .text .line1 {
-  width: 30%;
-  transform: rotate(-4deg);
-}
-.imgg .text .line2 {
-  transform: rotate(187deg);
-  width: 30%;
-  margin-bottom: 20px;
 }
 .imgg .text h2 {
   font-family: Helvetica, Arial, Geneva, sans-serif;
@@ -240,9 +225,6 @@ body {
   .imgg .text p {
     font-size: 1rem;
   }
-  .imgg .line1, .imgg .line2 {
-    width: 20%;
-  }
   .imgg .text .btn {
     padding: 8px 16px;
     font-size: 1rem;
@@ -255,9 +237,6 @@ body {
   .imgg .text p {
     font-size: 0.7rem;
   }
-  .imgg .line1, .imgg .line2 {
-    width: 10%;
-  }
 }
 
 .container2-flex .row {
@@ -269,12 +248,11 @@ body {
   position: relative;
   overflow: hidden;
   width: 50%;
-  height: 700px;
 }
 .container2-flex .col-6 .image-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,15 +271,6 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-}
-.container2-flex .col-6 .image-container .text .line1 {
-  width: 40%;
-  transform: rotate(-4deg);
-}
-.container2-flex .col-6 .image-container .text .line2 {
-  transform: rotate(187deg);
-  width: 40%;
-  margin-bottom: 20px;
 }
 .container2-flex .col-6 .image-container .text h1 {
   font-family: Helvetica, Arial, Geneva, sans-serif;
